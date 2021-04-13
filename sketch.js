@@ -64,10 +64,11 @@ function draw() {
    ground.display();
 
    if (gameState ==="END") {
-      background("black");
+      push();
       fill("red");
       textSize(100);
       text("Game Over", 200, 400);
+      pop();
    }
 
    for(var k = 0; k < plinkos.length; k++) {
